@@ -6,10 +6,11 @@ project:
     name: lightning
   local:
     protocol: http
-    hostname: 'local.${project.machine_name}.com'
+    hostname: 'h7docroot.dd:8083'
 git:
-  default_branch: master
-  remotes: {  }
+  default_branch: h7
+  remotes:
+    - devcloud2@svn-3.devcloud.hosting.acquia.com:devcloud2.git
 drush:
   aliases:
     remote: '${project.machine_name}.test'
