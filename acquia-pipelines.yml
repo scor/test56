@@ -23,7 +23,7 @@ events:
         - run-tests:
             type: script
             script:
-              - source ${BLT_DIR}/scripts/pipelines/run_tests
+              - /usr/bin/env ruby -e "puts 'hello'"
 
         # Generate artifact.
         - build-artifact:
