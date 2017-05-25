@@ -34,7 +34,7 @@ events:
               # parse arachni results and make exit decision
 
         # Generate artifact.
-        - build-artifact:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/build_artifact
+        #- build-artifact:
+        #    type: script
+        #    script:
+        #      - source ${BLT_DIR}/scripts/pipelines/build_artifact
