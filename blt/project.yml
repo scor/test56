@@ -11,6 +11,8 @@ git:
   default_branch: h7
   remotes:
     - 'devcloud2@svn-3.devcloud.hosting.acquia.com:devcloud2.git'
+behat:
+  server-url: http://0.0.0.0:8888
 drush:
   aliases:
     remote: '${project.machine_name}.test'
