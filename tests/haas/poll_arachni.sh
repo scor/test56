@@ -12,4 +12,4 @@ done
 echo "Arachni completed..."
 
 echo "Killing drush server..."
-pgrep drush | xargs kill 2>/dev/null
+pkill -f runserver
