@@ -14,5 +14,5 @@ cd ..
 drush runserver `hostname`:8888 &
 
 drush en -y drupen
-drush --uri=`hostname`:8888 route-list > /mnt/tmp/drupal_route_list.txt
-cat /mnt/tmp/drupal_route_list.txt
+drush --uri=`hostname`:8888 route-list > /mnt/tmp/local.prod/source/tests/haas/drupal_route_list.txt
+cat /mnt/tmp/local.prod/source/tests/haas/drupal_route_list.txt
