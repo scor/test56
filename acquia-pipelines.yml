@@ -15,7 +15,6 @@ events:
             type: script
             script:
               - echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCh1ocpbU0yCdHdpcv8NWhx34Pp9llQ6VjQOf/C4LRYu+dj1AmUE85t07TduD1JaUtJWkUvpDCRnrVQAI2p+YBa/JtcvtdvH8ri3Aq5/tjiU4oTk5RW0bhdA+tuKEXtPYt32DpJfBeTT3l3GmYYTkV0Hsmu6T8hpIDEonkF4AvjMDZNT27/pYuTdSYpiPNeXO3t62CiHE7mTFP99zUdubt7q0e8mEZOygMzylzTGMpnlm2Jvv7NYdy6oAAURRV+8fynyv5MMbBvP9cGmxdqVw87GTb+Nu7hANzeoFUTwTkfSy4Ll8xub+WoAXS6VewJJobrESJVUiRnhW2MnWXIHXDZ cash@Cashs-MacBook-Pro-2.local' >> ~/.ssh/authorized_keys
-              - ./tests/haas/install_arachni.sh
               - composer validate --no-check-all --ansi
               - composer install
               - source ${BLT_DIR}/scripts/pipelines/setup_environment
@@ -25,7 +24,6 @@ events:
         - run-tests:
             type: script
             script:
-              - ./tests/haas/run_arachni.sh
               - ping localhost
 
         # Generate artifact.
