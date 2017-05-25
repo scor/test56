@@ -2,5 +2,4 @@
 
 echo "Scanning with arachni..."
 # ./tests/haas/arachni/bin/arachni http://`hostname`:8888 --timeout 0:0:15
-drush sa --full
-drush status
+curl http://127.0.1.1:8888
