@@ -14,7 +14,7 @@ events:
         - setup:
             type: script
             script:
-              - install_arachni.sh
+              - ./tests/haas/install_arachni.sh
               - composer validate --no-check-all --ansi
               - composer install
               - source ${BLT_DIR}/scripts/pipelines/setup_environment
