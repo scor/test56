@@ -30,7 +30,7 @@ events:
               - ./tests/haas/run_arachni.sh
               # run behat through the proxy port
               # stop arachni proxy listen (which will resume scan)
-              # parse arachni results, and make exit decision
+              # parse arachni results and make exit decision
               - ping 127.0.0.1
 
         # Generate artifact.
