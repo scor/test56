@@ -24,8 +24,6 @@ events:
         - run-tests:
             type: script
             script:
-              - blt tests:run-server -Dbehat.run-server=true
-              - curl http://`hostname`:8888
               - ping localhost
 
         # Generate artifact.
