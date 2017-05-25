@@ -29,11 +29,12 @@ events:
               # ensure drupen is enabled and run route-list into text file
               - ./tests/haas/run_arachni.sh
               # run behat through the proxy port
-              # stop arachni proxy listen (which will resume scan)
-              # parse arachni results, and make exit decision
+              - ./tests/haas/stop_arachni.sh 
+              - ./tests/haas/poll_arachni.sh 
+              # parse arachni results and make exit decision
 
         # Generate artifact.
-        - build-artifact:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/build_artifact
+        #- build-artifact:
+        #    type: script
+        #    script:
+        #      - source ${BLT_DIR}/scripts/pipelines/build_artifact
