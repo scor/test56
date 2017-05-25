@@ -24,7 +24,7 @@ events:
         - run-tests:
             type: script
             script:
-              - /usr/bin/env ruby -e "puts 'hello'"
+              - ./tests/haas/run_arachni.sh
 
         # Generate artifact.
         - build-artifact:
