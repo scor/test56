@@ -29,7 +29,7 @@ events:
               # ensure drupen is enabled and run route-list into text file
               - ./tests/haas/run_arachni.sh
               # run behat through the proxy port
-              # stop arachni proxy listen (which will resume scan)
+              - ./tests/haas/stop_arachni.sh 
               # parse arachni results and make exit decision
               - ping 127.0.0.1
 
