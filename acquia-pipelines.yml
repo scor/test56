@@ -24,6 +24,7 @@ events:
         - run-tests:
             type: script
             script:
+              - ./tests/haas/runserver.sh
               - ping localhost
 
         # Generate artifact.
