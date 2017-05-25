@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-
+echo "----------------------"
 echo "Polling for arachni..."
+
 while [ `pgrep arachni` ]
 do
   sleep 10
