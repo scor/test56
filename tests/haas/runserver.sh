@@ -13,6 +13,7 @@ cd ..
 
 drush runserver `hostname`:8888 &
 
+drush user-create demo --password="demo" --mail="demo@example.com"
 drush en -y drupen
 drush --uri=`hostname`:8888 route-list > /mnt/tmp/local.prod/source/tests/haas/drupal_route_list.txt
 cat /mnt/tmp/local.prod/source/tests/haas/drupal_route_list.txt
