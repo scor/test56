@@ -37,3 +37,4 @@ events:
             type: script
             script:
               - source ${BLT_DIR}/scripts/pipelines/build_artifact
+
