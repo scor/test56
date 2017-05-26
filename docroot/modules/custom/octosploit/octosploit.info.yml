@@ -1,0 +1,4 @@
+name: Octosploit
+description: Exploitable Drupal 8 module to aid in evaluating security scanning tools.
+core: 8.x
+type: module

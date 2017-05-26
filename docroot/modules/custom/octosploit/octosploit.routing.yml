@@ -1,0 +1,25 @@
+octosploit.form:
+  path: '/octosploit/form'
+  defaults:
+    _title: 'Insecure Form'
+    _form: 'Drupal\octosploit\Form\InsecureForm'
+  requirements:
+    _permission: 'access content'
+
+octosploit.display:
+  path: '/octosploit/display'
+  defaults:
+    _controller: '\Drupal\octosploit\Controller\DisplayController::display'
+    _title: 'Insecure Display'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+octosploit.arg:
+  path: '/octosploit/arg/{input}'
+  defaults:
+    _controller: '\Drupal\octosploit\Controller\DisplayController::arg'
+    _title: 'Insecure Argument'
+  requirements:
+    _permission: 'access content'
