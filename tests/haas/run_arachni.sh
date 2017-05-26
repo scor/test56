@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 HOSTNAME=`hostname`
 ADDRESS=`cat /etc/hosts | grep $HOSTNAME | cut -d "	" -f1`
 echo "Binding proxy on $ADDRESS"
