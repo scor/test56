@@ -23,4 +23,5 @@ echo "Killing drush server..."
 pkill -f runserver
 
 ./tests/haas/arachni/bin/arachni_reporter --reporter='json' /mnt/tmp/local.prod/source/*.afr > /mnt/tmp/local.prod/source/arachni_report.json
+cat /mnt/tmp/local.prod/source/arachni_report.json
 ruby ./tests/haas/reporter.rb /mnt/tmp/local.prod/source/arachni_report.json
