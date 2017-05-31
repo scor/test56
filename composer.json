@@ -5,10 +5,45 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
+        "cweagans/composer-patches": "^1.5.0",
+        "composer/installers": "^1.0",
+        "drupal/core": "8.3.2",
         "acquia/blt": "~8.7.0",
         "drupal/paragraphs": "^1.0",
-        "drush/drush": "^8.1"
+        "drupal/webform": "^5.0",
+        "drush/drush": "^8.1",
+        "drupal/media_entity_dailymotion": "*",
+        "drupal/media_upload": "*",
+        "drupal/waterfall_views": "*",
+        "drupal/baidu_share_d8": "*",
+        "drupal/extensions_api": "*",
+        "drupal/user_login_persistent_destination": "*",
+        "drupal/text_rotator_filter": "*",
+        "drupal/smartlook_tracking": "*",
+        "drupal/link_target": "*",
+        "drupal/search_api_sort_priority": "*",
+        "drupal/remove_querystring_from_static_resource": "*",
+        "drupal/twig_blocks": "*",
+        "drupal/ckeditor_shortcodes": "*",
+        "drupal/raven_release": "*",
+        "drupal/twig_vardumper": "*",
+        "drupal/fiu": "*",
+        "drupal/relative_to_absolute_url": "*",
+        "drupal/lightning_media_pinterest": "*",
+        "drupal/media_entity_googledocs": "*",
+        "drupal/lightning_media_spotify": "*",
+        "drupal/lightning_media_tumblr": "*",
+        "drupal/lightning_media_soundcloud": "*",
+        "drupal/lightning_media_facebook": "*",
+        "drupal/advanced_shortcodes": "*",
+        "drupal/baidumap_fieldtype": "*"
     },
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://packages.drupal.org/8"
+      }
+    ],
     "require-dev": {},
     "extra": {
         "enable-patching": true,
@@ -43,8 +78,7 @@
         },
         "merge-plugin": {
             "require": [
-                "vendor/acquia/blt/composer.required.json",
-                "vendor/acquia/blt/composer.suggested.json"
+                "vendor/acquia/blt/composer.required.json"
             ],
             "include": [
                 "blt/composer.overrides.json"

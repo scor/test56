@@ -1,0 +1,30 @@
+name: Sniff 
+type: profile
+description: 'Minimal profile + ~20 brand new modules on d.o to sniff for security issues.'
+version: VERSION
+core: 8.x
+dependencies:
+  - node
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+  - media_entity_dailymotion
+  - media_upload
+  - waterfall_views
+  - extensions_api
+  - user_login_persistent_destination
+  - text_rotator_filter
+  - smartlook_tracking
+  - link_target
+  - search_api_sort_priority
+  - twig_blocks
+  - ckeditor_shortcodes
+  - raven_release
+  - twig_vardumper
+  - fiu
+  - media_entity_googledocs
+  - advanced_shortcodes
+  - baidumap_fieldtype
+themes:
+  - stark
