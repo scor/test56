@@ -27,6 +27,7 @@ events:
             script:
               - ./tests/haas/runserver.sh
               - ./tests/haas/run_arachni.sh
+              - echo 'completed.'
               # parse arachni results and make exit decision
 
         # Generate artifact.
