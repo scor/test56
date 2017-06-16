@@ -19,14 +19,15 @@ events:
               - composer install
               - source ${BLT_DIR}/scripts/pipelines/setup_environment
               - source ${BLT_DIR}/scripts/pipelines/setup_project
-              - ./tests/haas/install_arachni.sh
+              # - ./tests/haas/install_arachni.sh
 
         # Execute all testing and validation tasks.
         - run-tests:
             type: script
             script:
-              - ./tests/haas/runserver.sh
-              - ./tests/haas/run_arachni.sh
+              ping 8.8.8.8
+              # - ./tests/haas/runserver.sh
+              # - ./tests/haas/run_arachni.sh
               # parse arachni results and make exit decision
 
         # Generate artifact.
